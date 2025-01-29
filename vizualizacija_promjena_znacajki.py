@@ -7,7 +7,7 @@ print(len(znacajke))
 
 plt.figure(figsize=(20, 10))
 
-for i, feature in enumerate(['EDAmean', 'EDAstd', 'EDAslope', 'EDArange', 'RESPrate', 'RESPamplitude', 'RESPstd', 'RESPrange']):
+for i, feature in enumerate(['EDAmean', 'EDAstd', 'EDAslope', 'EDArange', 'RESPrate', 'RESPamplitude', 'RESPstd', 'mae']):
     plt.subplot(1, 8, i + 1)
     plt.title(feature)
     for id in znacajke['id'].unique():
